@@ -2,10 +2,13 @@
 
 dataframe.head(n)                   to show the first n rows of dataframe
 dataframe.tail(n)                   to show the bottom n rows of dataframe
-dataframe.dtypes                    to check datatypes
+
+dataframe.dtypes()                  to check data types
+dataframe.astype()                  to convert data types
 dataframe.describe()                returns a statistical summary
 dataframe.describe(include="all")   returns a statistical summary of all including objects
 dataframe.info()                    provides a concise summary of all your dataframe
+
 
 
 --- Data manipulation ---
@@ -16,6 +19,10 @@ dataframe.dropna(inplace=True)                  applies changes to the actual da
 
 dataframe.replace(missing_value,new_value)      replace value of one to another in dataframe
 
+dataframe["key"].std()                          returns the standard deviation
+dataframe["key"].mean()                         returns the mean of the column
+
+pd.get_dummies(df["fuel"])                      Convert categorical variables to dummy variables (0 or 1) [One - hot encoding]
 
 
 --------------------------------------------

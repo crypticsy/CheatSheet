@@ -1,0 +1,38 @@
+--- Importing Datasets ---
+
+dataframe.head(n)                   to show the first n rows of dataframe
+dataframe.tail(n)                   to show the bottom n rows of dataframe
+dataframe.dtypes                    to check datatypes
+dataframe.describe()                returns a statistical summary
+dataframe.describe(include="all")   returns a statistical summary of all including objects
+dataframe.info()                    provides a concise summary of all your dataframe
+
+
+--- Data manipulation ---
+
+dataframe.dropna(axis=0)                        drops the entire row if found empty
+dataframe.dropna(axis=1)                        drops the entier column if found empty
+dataframe.dropna(inplace=True)                  applies changes to the actual dataframe itself
+
+dataframe.replace(missing_value,new_value)      replace value of one to another in dataframe
+
+
+
+--------------------------------------------
+
+Data Format             Read                    Save
+
+csv                     pd.read_csv()           pd.to_csv()
+json                    pd.read_json()          pd.to_json()
+Excel                   pd.read_excel()         pd.to_excel()
+sql                     pd.read_sql()           pd.to_sql()
+
+
+--------------------------------------------
+
+Pandas Type                     Native Python type              Description
+
+object                          string                          numbers and strings
+int64                           int                             numeric characters
+float64                         float                           numeric characters with decimals
+datetime64,timedelta[ns]        N/A

@@ -1,4 +1,4 @@
---- Importing Datasets ---
+------------------------------------	Importing Datasets  ------------------------------------
 
 dataframe.head(n)                   to show the first n rows of dataframe
 dataframe.tail(n)                   to show the bottom n rows of dataframe
@@ -11,7 +11,7 @@ dataframe.info()                    provides a concise summary of all your dataf
 
 
 
---- Data manipulation ---
+------------------------------------	Data manipulation  ------------------------------------
 
 dataframe.dropna(axis=0)                        drops the entire row if found empty
 dataframe.dropna(axis=1)                        drops the entier column if found empty
@@ -25,21 +25,20 @@ dataframe["key"].mean()                         returns the mean of the column
 pd.get_dummies(df["fuel"])                      Convert categorical variables to dummy variables (0 or 1) [One - hot encoding]
 
 
---------------------------------------------
 
-Data Format             Read                    Save
+________________________________________________________________
+Data Format      |      Read               |     Save
+----------------------------------------------------------------
+csv              |      pd.read_csv()      |     df.to_csv()
+json             |      pd.read_json()     |     df.to_json()
+Excel            |      pd.read_excel()    |     df.to_excel()
+sql              |      pd.read_sql()      |     df.to_sql()
 
-csv                     pd.read_csv()           pd.to_csv()
-json                    pd.read_json()          pd.to_json()
-Excel                   pd.read_excel()         pd.to_excel()
-sql                     pd.read_sql()           pd.to_sql()
 
-
---------------------------------------------
-
-Pandas Type                     Native Python type              Description
-
-object                          string                          numbers and strings
-int64                           int                             numeric characters
-float64                         float                           numeric characters with decimals
-datetime64,timedelta[ns]        N/A
+____________________________________________________________________________________________________
+Pandas Type                |     Native Python type      |        Description
+----------------------------------------------------------------------------------------------------
+object                     |     string                  |        numbers and strings
+int64                      |     int                     |        numeric characters
+float64                    |     float                   |        numeric characters with decimals
+datetime64,timedelta[ns]   |     N/A                     |   

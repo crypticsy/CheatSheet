@@ -17,13 +17,15 @@ Metacharacters are characters with a special meaning:
 _____________________________________________________________________________________________________
 Character       Description                                                                 Example
 -----------------------------------------------------------------------------------------------------
-[]          A set of characters                                                             "[a-m]"	
+[]          Matches a set of characters in the listed set                                   "[a-m]"	
 \           Signals a special sequence (can also be used to escape special characters)      "\d"	
 .           Any character (except newline character)                                        "he..o"	
 ^           Starts with                                                                     "^hello"	
 $           Ends with                                                                       "world$"	
-*           Zero or more occurrences                                                        "aix*"	
-+           One or more occurrences                                                         "aix+"	
+*           Zero or more occurrences                                                        "aix*"		
+*?          Zero or more occurrences (non-greedy)                                           "aix*?"	
++           One or more occurrences                                                         "aix+"
++?          One or more occurrences (non-greedy)                                            "aix+?"	
 {}          Exactly the specified number of occurrences                                     "al{2}"	
 |           Either or	                                                                    "falls|stays"	
 ()          Capture and group

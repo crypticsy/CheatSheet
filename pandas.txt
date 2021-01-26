@@ -38,7 +38,8 @@ dataframe["key"].mean()                         returns the mean of the column
 
 pd.get_dummies(df["fuel"])                      Convert categorical variables to dummy variables (0 or 1) [One - hot encoding]
 
-
+dataframe.groupby([column, column])             Group dataframe based on column
+dataframe[column].agg('function')               Perform an operation in a particular coulmn
 
 
 

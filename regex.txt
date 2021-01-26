@@ -12,6 +12,9 @@ sub         Replaces one or many matches with a string
 
 
 
+
+
+
 Metacharacters are characters with a special meaning:
 
 _____________________________________________________________________________________________________
@@ -29,6 +32,9 @@ $           Ends with                                                           
 {}          Exactly the specified number of occurrences                                     "al{2}"	
 |           Either or	                                                                    "falls|stays"	
 ()          Capture and group
+
+
+
 
 
 
@@ -57,6 +63,7 @@ Character   Description                                                         
 
 \W          Returns a match where the string DOES NOT contain any word characters                                               "\W"	
 \Z          Returns a match if the specified characters are at the end of the string                                            "Spain\Z"
+
 
 
 

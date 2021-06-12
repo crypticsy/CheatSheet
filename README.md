@@ -1,6 +1,6 @@
 # CheatSheet
 
-A collection of cheatsheet that I made while learning stuff.
+A collection of cheat sheet for quick recall for my dumb brain.
 
 * [Bash](./bash.txt)
 * [Git](./git.txt)
